@@ -1,0 +1,67 @@
+---
+title: "Group exercise 1"
+author: "Pernille Kjeilen Fauskanger"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\newcommand{\EE}[2]{\mathrm{E}#1[ #2 #1]}
+
+## Task 1 -- Proof of 2.2 a
+
+We are to prove that
+\begin{equation}
+  \EE{\big}{u(w - X)} \leq \EE{\big}{u(w - Y)} \Longleftrightarrow \EE{\big}{b + a \cdot u(w - X)} \leq \EE{\big}{b + a \cdot u(w - Y)},
+\end{equation}
+for $a \in \mathbb{R}^+$ and $b \in \mathbb{R}$. Here, $\mathbb{R}^+ = (0, \infty)$. We begin to prove '$\Longrightarrow$':
+\begin{align}
+  &\EE{\big}{u(w - X)} \leq \EE{\big}{u(w - Y)} \overset{a > 0}{\Longrightarrow} a \cdot \EE{\big}{u(w - X)} \leq a \cdot \EE{\big}{u(w - Y)} \\
+  &\Longrightarrow \EE{\big}{b} + a \cdot \EE{\big}{u(w - X)} \leq \EE{\big}{b} + a \cdot \EE{\big}{u(w - Y)} \nonumber \\
+  &\Longrightarrow \EE{\big}{b + a \cdot u(w - X)} \leq \EE{\big}{b + a \cdot u(w - Y)} \square \nonumber
+\end{align}
+We now prove '$\Longleftarrow$':
+\begin{align}
+  &\EE{\big}{b + a \cdot u(w - X)} \leq \EE{\big}{b + a \cdot u(w - Y)} \overset{\mathrm{lin \; op}}{\Longrightarrow} \EE{\big}{b} + \EE{\big}{a \cdot u(w - X)} \leq \EE{\big}{b} + \EE{\big}{a \cdot u(w - Y)} \\
+  &\Longrightarrow \EE{\big}{a \cdot u(w - X)} \leq \EE{\big}{a \cdot u(w - Y)} \nonumber \Longrightarrow a \cdot \EE{\big}{u(w - X)} \leq a \cdot \EE{\big}{u(w - Y)} \nonumber \\
+  &\overset{a>0}{\Longrightarrow} \EE{\big}{u(w - X)} \leq \EE{\big}{u(w - Y)} \square \nonumber
+\end{align}
+We have now proved that
+\begin{equation}
+  \EE{\big}{u(w - X)} \leq \EE{\big}{u(w - Y)} \Longleftrightarrow \EE{\big}{b + a \cdot u(w - X)} \leq \EE{\big}{b + a \cdot u(w - Y)}.
+\end{equation}
+
+## Task 2 -- Exercise 1.2.4
+
+Let $u(x) = \sqrt{x}, \; x \geq 0 \Rightarrow u(w - Z) = \sqrt{w - Z}, \; w \geq Z$. This person will prefer $X$ to $Y$ if the expected utility evaluated at $X$ is larger than at $Y$. So, we need to show that
+\begin{equation}
+  \EE{\big}{u(X)} > \EE{\big}{u(Y)} \Rightarrow \EE{\big}{\sqrt{X}} > \EE{\big}{\sqrt{Y}} \Rightarrow \sum P(X = x) \cdot \sqrt{x} > \sum P(X = y) \cdot \sqrt{y}
+\end{equation}
+This is straight forward as we know the PMFs for $X$ and $Y$:
+\begin{align}
+  &\sum P(X = x) \cdot \sqrt{x} > \sum P(X = y) \cdot \sqrt{y} \Rightarrow \frac{1}{2}\Big[20 + 30\Big] > \frac{1}{5}\Big[30 + 80\Big] \nonumber \\
+  &\Rightarrow 25 \geq 22 \Rightarrow \text{prefer X to Y} \nonumber
+\end{align}
+He is risk-averse because $u''(x) < 0$. A risk-averse person that now have determined that he want to go for $X$ rather than $Y$, would decline for values of $w$ where facing $X$ is better than facing $\EE{\big}{X}$;
+\begin{align}
+  &25 = \EE{\big}{u(X)} > u\Big(\EE{\big}{X}\Big) = \sqrt{w} \Rightarrow w < 625 \nonumber
+\end{align}
+For example, a linear utility function would results in this person preffering $Y$ over $X$.
+
+## Task 3 -- Exercise 1.2.8
+
+Nothing about current wealth are stated in the text, so we assume that $w = 0$ for simplicity. After winning the first time he win $1$. Then the utility function is $u(1)$. Assuming that the the chance of winning is $0.5$, we can see that the expected utility playing a second round is $\EE{\big}{u(2)}$. The choice of yes, signify that
+\begin{equation}
+  \EE{\big}{u(2)} > u(1) \Rightarrow \frac{1}{2}(u(0) + u(2)) > 1 \Rightarrow u(2) > 2
+\end{equation}
+If he plays a third round, his expected utility is $\EE{\big}{u(4)}$. Saying yes to this after a huddle, as he does, entails that he is risk-natural
+\begin{equation}
+  \EE{\big}{u(4)} = u(2) \Rightarrow \frac{1}{2}(u(0) + u(4)) = u(2) \Rightarrow u(4) = 2u(2) > 4
+\end{equation}
+If he plays a fourth round, his expected utility is $\EE{\big}{u(8)}$. Saying no to this, as he does, entails that he likes risk-aversion
+\begin{equation}
+  \EE{\big}{u(8)} < u(4) \Rightarrow \frac{1}{2}(u(0) + u(8)) = u(4) \Rightarrow 8 > 2u(4) > u(8) 
+\end{equation}
