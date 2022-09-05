@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.13)  31 AUG 2022 19:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.13)  5 SEP 2022 15:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -631,47 +631,64 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 78.
+(Font)              <10> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 78.
+(Font)              <7> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 78.
+(Font)              <5> on input line 79.
 [1
 
 {C:/Users/pernille.fauskanger/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
-] [2] (Exercises-solution-by-Pernille.aux) ) 
+] [2
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.11
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.188 \end{equation}
+                     So we are interested in solving \begin{equation}]
+<Exercises-solution-by-Pernille_files/figure-latex/risk-aversion-alpha-T5-1-1.p
+df, id=48, 289.08pt x 216.81pt>
+File: Exercises-solution-by-Pernille_files/figure-latex/risk-aversion-alpha-T5-
+1-1.pdf Graphic file (type pdf)
+<use Exercises-solution-by-Pernille_files/figure-latex/risk-aversion-alpha-T5-1
+-1.pdf>
+Package pdftex.def Info: Exercises-solution-by-Pernille_files/figure-latex/risk
+-aversion-alpha-T5-1-1.pdf  used on input line 204.
+(pdftex.def)             Requested size: 289.09251pt x 216.81938pt.
+[3 <./Exercises-solution-by-Pernille_files/figure-latex/risk-aversion-alpha-T5-
+1-1.pdf>] (Exercises-solution-by-Pernille.aux) ) 
 Here is how much of TeX's memory you used:
- 13161 strings out of 478354
- 213902 string characters out of 2830510
- 574477 words of memory out of 3000000
- 31300 multiletter control sequences out of 15000+600000
- 513849 words of font info for 93 fonts, out of 8000000 for 9000
+ 13227 strings out of 478354
+ 215225 string characters out of 2830510
+ 576571 words of memory out of 3000000
+ 31316 multiletter control sequences out of 15000+600000
+ 521135 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,12n,81p,1029b,450s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/pernille.fauskanger/AppDa
-ta/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/pernille.fa
-uskanger/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Use
-rs/pernille.fauskanger/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.e
-nc}{C:/Users/pernille.fauskanger/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
-lm/lm-mathex.enc}{C:/Users/pernille.fauskanger/AppData/Local/Programs/MiKTeX/fo
-nts/enc/dvips/lm/lm-ec.enc}<C:/Users/pernille.fauskanger/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/pernille.fauskanger/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/pernille.fausk
-anger/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/
-pernille.fauskanger/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.p
-fb><C:/Users/pernille.fauskanger/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/lm/lmr10.pfb><C:/Users/pernille.fauskanger/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/lm/lmr12.pfb><C:/Users/pernille.fauskanger/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/pernille.fauskanger/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/pernille.fauska
-nger/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/p
-ernille.fauskanger/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pf
-b><C:/Users/pernille.fauskanger/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/symbols/msam10.pfb><C:/Users/pernille.fauskanger/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Exercises-solution-by-Pernille.pdf (2 pages, 181748 bytes).
+ 74i,12n,81p,1029b,458s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/pernille.fauskanger/A
+ppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/pernill
+e.fauskanger/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:
+/Users/pernille.fauskanger/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
+rm.enc}{C:/Users/pernille.fauskanger/AppData/Local/Programs/MiKTeX/fonts/enc/dv
+ips/lm/lm-mathex.enc}{C:/Users/pernille.fauskanger/AppData/Local/Programs/MiKTe
+X/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/pernille.fauskanger/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/pernille.fauskanger/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/pernille.f
+auskanger/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Us
+ers/pernille.fauskanger/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmm
+i7.pfb><C:/Users/pernille.fauskanger/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/lm/lmr10.pfb><C:/Users/pernille.fauskanger/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/lm/lmr12.pfb><C:/Users/pernille.fauskanger/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/pernille.fauskanger/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/pernille.fa
+uskanger/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Use
+rs/pernille.fauskanger/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy
+7.pfb><C:/Users/pernille.fauskanger/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/symbols/msam10.pfb><C:/Users/pernille.fauskanger/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Exercises-solution-by-Pernille.pdf (3 pages, 224483 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 24601 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 28718 words of extra memory for PDF output out of 29859 (max. 10000000)
 
